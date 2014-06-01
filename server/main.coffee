@@ -3,13 +3,14 @@ Meteor.startup(
     configureCompanies()
 )
 
+
 configureCompanies = ->
   for companyKey, company of Meteor.settings.companies
     do(companyKey, company) ->
       firebase = configureFirebase(Meteor.settings.firebase, companyKey)
-      configureBeacons(firebase, company.beacons)
-      configureProducts(firebase, company.products)
-      configureLocations(firebase, company.locations)
+      configure(firebase, company.beacons, "beacons")
+      configure(firebase, company.products, "products")
+      configure(firebase, company.locations, "locations")
 
 
 configureFirebase = (firebaseConfig, companyKey) ->
@@ -20,21 +21,8 @@ configureFirebase = (firebaseConfig, companyKey) ->
   firebase
 
 
-configureBeacons = (firebase, beacons) ->
-  for beaconKey, beacon of beacons
-    do(beaconKey, beacon) ->
-      beaconRef = firebase.child("/beacons/#{beaconKey}")
-      beaconRef.set(beacon)
-
-configureProducts = (firebase, products) ->
-  for productKey, product of products
-    do(productKey, product) ->
-      productRef = firebase.child("/products/#{productKey}")
-      productRef.set(product)
-
-
-configureLocations = (firebase, locations) ->
-  for locationKey, location of locations
-    do(locationKey, location) ->
-      locationRef = firebase.child("/locations/#{locationKey}")
-      locationRef.set(location)
+configure = (firebase, hash, type) ->
+  for key, value of hash
+    do(key, value) ->
+      ref = firebase.child("/#{type}/#{key}")
+      ref.set(value)
