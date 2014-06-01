@@ -1,0 +1,93 @@
+{
+  "firebase": {
+    "root": "https://looppulse-config-thomas.firebaseio.com",
+    "forceReset": true
+  },
+
+  "beacons": {
+    "beaconOne": {
+      "uuid": "74278BDA-B644-4520-8F0C-720EAF059935",
+      "major": 100,
+      "minor": 0
+    },
+
+    "beaconTwo": {
+      "uuid": "E2C56DB5-DFFB-48D2-B060-D0F5A71096E0",
+      "major": 10,
+      "minor": 0
+    },
+
+    "beaconThree": {
+      "uuid": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+      "major": 28364,
+      "minor": 4756
+    },
+
+    "beaconFour": {
+      "uuid": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+      "major": 54330,
+      "minor": 38700
+    },
+
+    "beaconFive": {
+      "uuid": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+      "major": 58020,
+      "minor": 34876
+    }
+  },
+
+  "companies": {
+    "uniqlo": {
+      "name": "Uniqlo",
+      "logoUrl": "http://upload.wikimedia.org/wikipedia/commons/thumb/9/92/UNIQLO_logo.svg/204px-UNIQLO_logo.svg.png",
+
+      "products": {
+        "kids": {
+          "name": "Kids"
+        },
+        "men": {
+          "name": "Men"
+        },
+        "ladies": {
+          "name": "Ladies"
+        }
+      },
+
+      "locations": {
+        "tks": {
+          "name": "TKS branch",
+          "address": "Citi Plaza, Tai Koo Shing",
+          "installations": [
+            {
+              "type": "entrance",
+              "beacon": "beaconOne"
+            },
+
+            {
+              "type": "cashier",
+              "beacon": "beaconTwo"
+            },
+
+            {
+              "type": "product",
+              "beacon": "beaconThree",
+              "product": "kids"
+            },
+
+            {
+              "type": "product",
+              "beacon": "beaconFour",
+              "product": "men"
+            },
+
+            {
+              "type": "product",
+              "beacon": "beaconFour",
+              "product": "ladies"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
