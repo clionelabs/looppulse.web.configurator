@@ -8,8 +8,8 @@ configureCompanies = ->
     do(companyKey, company) ->
       firebase = configureFirebase(Meteor.settings.firebase, companyKey)
       configureBeacons(firebase, company.beacons)
-      # configureProducts(firebase, company.products)
-      # configureLocations(firebase, company.locations)
+      configureProducts(firebase, company.products)
+      configureLocations(firebase, company.locations)
 
 
 configureFirebase = (firebaseConfig, companyKey) ->
@@ -25,3 +25,16 @@ configureBeacons = (firebase, beacons) ->
     do(beaconKey, beacon) ->
       beaconRef = firebase.child("/beacons/#{beaconKey}")
       beaconRef.set(beacon)
+
+configureProducts = (firebase, products) ->
+  for productKey, product of products
+    do(productKey, product) ->
+      productRef = firebase.child("/products/#{productKey}")
+      productRef.set(product)
+
+
+configureLocations = (firebase, locations) ->
+  for locationKey, location of locations
+    do(locationKey, location) ->
+      locationRef = firebase.child("/locations/#{locationKey}")
+      locationRef.set(location)
