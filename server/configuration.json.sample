@@ -1,6 +1,6 @@
 {
   "firebase": {
-    "root": "https://looppulse-config-thomas.firebaseio.com",
+    "root": "https://looppulse-store.firebaseio.com/",
     "forceReset": false
   },
 
@@ -82,7 +82,7 @@
 
             {
               "type": "product",
-              "beacon": "beaconFour",
+              "beacon": "beaconFive",
               "product": "ladies"
             }
           ]
