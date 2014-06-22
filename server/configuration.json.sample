@@ -53,6 +53,18 @@
         }
       },
 
+      "entrances": {
+        "front": {
+          "name": "Front door"
+        }
+      },
+
+      "cashiers": {
+        "main": {
+          "name": "Main cashier"
+        }
+      },
+
       "locations": {
         "tks": {
           "name": "TKS branch",
@@ -60,12 +72,14 @@
           "installations": [
             {
               "type": "entrance",
-              "beacon": "beaconOne"
+              "beacon": "beaconOne",
+              "entrance": "front"
             },
 
             {
               "type": "cashier",
-              "beacon": "beaconTwo"
+              "beacon": "beaconTwo",
+              "cashier": "main"
             },
 
             {
