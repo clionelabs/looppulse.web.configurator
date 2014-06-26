@@ -73,31 +73,36 @@
             {
               "type": "entrance",
               "beacon": "beaconOne",
-              "entrance": "front"
+              "entrance": "front",
+              "coord" : { "x": 107, "y": 46}
             },
 
             {
               "type": "cashier",
               "beacon": "beaconTwo",
-              "cashier": "main"
+              "cashier": "main",
+              "coord" : { "x": 466, "y": 85}
             },
 
             {
               "type": "product",
               "beacon": "beaconThree",
-              "product": "kids"
+              "product": "kids",
+              "coord" : { "x": 330, "y": 306}
             },
 
             {
               "type": "product",
               "beacon": "beaconFour",
-              "product": "men"
+              "product": "men",
+              "coord" : { "x": 53, "y": 162}
             },
 
             {
               "type": "product",
               "beacon": "beaconFive",
-              "product": "ladies"
+              "product": "ladies",
+              "coord" : { "x": 196, "y": 206 }
             }
           ]
         }
