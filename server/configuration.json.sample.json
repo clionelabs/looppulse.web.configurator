@@ -1,6 +1,6 @@
 {
   "firebase": {
-    "root": "https://looppulse-store.firebaseio.com/",
+    "root": "https://looppulse-config.firebaseio.com/",
     "forceReset": false
   },
 
@@ -103,6 +103,13 @@
               "beacon": "beaconFive",
               "product": "ladies",
               "coord" : { "x": 196, "y": 206 }
+            }
+          ],
+          "engagements": [
+            {
+              "type": "welcome",
+              "message": "Welcome to Uniqlo!",
+              "triggerBeacons": ["beaconOne"]
             }
           ]
         }
