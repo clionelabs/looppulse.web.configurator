@@ -5,21 +5,19 @@ Meteor.startup(
     console.log("All done. Press Ctrl-C to exit")
 )
 
-
 configureCompanies = ->
-  console.log("Preparing.")
-  for companyKey, company of Meteor.settings.companies
-    # do(companyKey, company) ->
-      console.log("Writing...", Meteor.settings.firebase, companyKey)
-      firebase = configureFirebase(Meteor.settings.firebase, companyKey)
-      firebase.set(company)
+  console.log("Preparing:", Meteor.settings.companyFiles)
 
-
-configureFirebase = (firebaseConfig, companyKey) ->
-
-  firebasePath = "#{firebaseConfig.root}/companies/#{companyKey}"
+  firebaseConfig = Meteor.settings.firebase
+  firebasePath = "#{firebaseConfig.root}/companies"
   console.log("firebase path:", firebasePath)
   firebase = new Firebase(firebasePath)
   if firebaseConfig.forceReset?
     firebase.remove()
-  firebase
+
+  for companyFile in Meteor.settings.companyFiles
+    console.log("Writing...", firebaseConfig, companyFile)
+    file = Assets.getText(companyFile)
+    company = JSON.parse(file)
+
+    firebase.push(company)
