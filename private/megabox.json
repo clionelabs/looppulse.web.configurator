@@ -2,10 +2,12 @@
     "name": "Megabox",
     "products": {
         "Mega Ice": {
-            "name": "Mega Ice"
+            "name": "Mega Ice",
+            "type": "entrance"
         },
         "Coco Curry House": {
-            "name": "Coco Curry House"
+            "name": "Coco Curry House",
+            "type": "cashier"
         },
         "Tokachi Dolphin Well": {
             "name": "Tokachi Dolphin Well"
@@ -276,7 +278,7 @@
                     }
                 },
                 "mr Laksa": {
-                    "product": "mr.Laksa",
+                    "product": "mr Laksa",
                     "beacon": {
                         "proximityUUID": "A2DCA1E4-0607-4F37-9FF1-825237B278FE",
                         "major": 315,
@@ -364,7 +366,7 @@
                         "California Pizza Kitchen",
                         "Studio City Bar & Café",
                         "Noir Chocolatier",
-                        "mr.Laksa"
+                        "mr Laksa"
                     ]
                 }
             ]
