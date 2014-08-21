@@ -4,6 +4,8 @@
     "forceReset": false
   },
 
+  "companyFiles": ["megabox.json"],
+
   "companies": {
     "uniqlo": {
       "name": "Uniqlo",
