@@ -1,6 +1,6 @@
 {
   "firebase": {
-    "root": "https://<YOUR_APP>.firebaseio.com/",
+    "root": "https://looppulse-config.firebaseio.com/",
     "forceReset": false
   },
 
