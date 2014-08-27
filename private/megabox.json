@@ -1,5 +1,40 @@
 {
     "name": "Megabox",
+    "categories": {
+      "Asian Delights": {
+        "name": "Asian Delights"
+      },
+      "Sports": {
+        "name": "Sports"
+      },
+      "Deil & Confectioneries": {
+        "name": "Deil & Confectioneries"
+      },
+      "Department Store": {
+        "name": "Department Store"
+      },
+      "Entertainment": {
+        "name": "Entertainment"
+      },
+      "Fashion": {
+        "name": "Fashion / Accessories"
+      },
+      "Lifestyle": {
+        "name": "Lifestyle / Gift / Book / Audio"
+      },
+      "Food": {
+        "name": "Food / Dining"
+      },
+      "Personal Care": {
+        "name": "Personal Care / Beauty"
+      },
+      "Children": {
+        "name": "Children / Kids"
+      },
+      "General": {
+        "name": "General"
+      }
+    },
     "products": {
         "Mega Ice": {
             "name": "Mega Ice",
@@ -10,52 +45,68 @@
             "type": "cashier"
         },
         "Tokachi Dolphin Well": {
-            "name": "Tokachi Dolphin Well"
+            "name": "Tokachi Dolphin Well",
+            "category": "Food"
         },
         "Nippon Sushi Dining": {
-            "name": "Nippon Sushi Dining"
+            "name": "Nippon Sushi Dining",
+            "category": "Food"
         },
         "Pepper Lunch": {
-            "name": "Pepper Lunch"
+            "name": "Pepper Lunch",
+            "category": "Food"
         },
         "Café Fifty Fifty": {
-            "name": "Café Fifty Fifty"
+            "name": "Café Fifty Fifty",
+            "category": "Food"
         },
         "Pacific Coffee Company": {
-            "name": "Pacific Coffee Company"
+            "name": "Pacific Coffee Company",
+            "category": "Food"
         },
         "Tai Hing": {
-            "name": "Tai Hing"
+            "name": "Tai Hing",
+            "category": "Food"
         },
         "UA Cinemas": {
-            "name": "UA Cinemas"
+            "name": "UA Cinemas",
+            "category": "Entertainment"
         },
         "AA Mini Store": {
-            "name": "AA Mini Store"
+            "name": "AA Mini Store",
+            "category": "General"
         },
         "Kenting Tea House": {
-            "name": "Kenting Tea House"
+            "name": "Kenting Tea House",
+            "category": "General"
         },
         "Thai Orchids": {
-            "name": "Thai Orchids"
+            "name": "Thai Orchids",
+            "category": "General"
         },
         "California Pizza Kitchen": {
-            "name": "California Pizza Kitchen"
+            "name": "California Pizza Kitchen",
+            "category": "General"
         },
         "Studio City Bar & Café": {
-            "name": "Studio City Bar & Café"
+            "name": "Studio City Bar & Café",
+            "category": "General"
         },
         "Noir Chocolatier": {
-            "name": "Noir Chocolatier"
+            "name": "Noir Chocolatier",
+            "category": "General"
         },
         "mr Laksa": {
-            "name": "mr.Laksa"
+            "name": "mr.Laksa",
+            "category": "General"
         },
         "10th floor escalator": {
-            "name": "10th floor escalator"
+            "name": "10th floor escalator",
+            "category": "General"
         },
         "general push notification": {
-            "name": "general push notification"
+            "name": "general push notification",
+            "category": "General"
         }
     },
     "locations": {
