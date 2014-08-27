@@ -1,5 +1,10 @@
 {
     "name": "Megabox",
+    "applications": [
+      {
+        "name": "Megabox Mall App"
+      }
+    ],
     "products": {
         "Mega Ice": {
             "name": "Mega Ice",
