@@ -380,8 +380,10 @@
                 {
                     "type": "welcome",
                     "name": "Welcome",
-                    "startAt": "2014-08-28T02:45:42.712Z",
-                    "endAt": "2015-08-28T02:45:42.712Z",
+                    "validPeriod": {
+                      "start": "2014-08-28T02:45:42.712Z",
+                      "end": "2015-08-28T02:45:42.712Z"
+                    },
                     "segment": "visitor",
                     "message": "Welcome to 10th floor of MegaBox!",
                     "triggerInstallations": [
@@ -391,8 +393,10 @@
                 {
                     "type": "recommendation",
                     "name": "Recommend after meal",
-                    "startAt": "2014-08-28T02:45:42.712Z",
-                    "endAt": "2015-08-28T02:45:42.712Z",
+                    "validPeriod": {
+                      "start": "2014-08-28T02:45:42.712Z",
+                      "end": "2015-08-28T02:45:42.712Z"
+                    },
                     "segment": "visitor",
                     "message": {
                         "Pacific Coffee Company": "Enjoy a cold frappuccino at Pacific Coffee after your meal.",
@@ -414,8 +418,10 @@
                 {
                     "type": "recommendation",
                     "name": "Recommend discount",
-                    "startAt": "2014-08-28T02:45:42.712Z",
-                    "endAt": "2015-08-28T02:45:42.712Z",
+                    "validPeriod": {
+                      "start": "2014-08-28T02:45:42.712Z",
+                      "end": "2015-08-28T02:45:42.712Z"
+                    },
                     "segment": "visitor",
                     "message": {
                         "Kenting Tea House": "Special $10 off at Kenting Tea House with your movie ticket",
