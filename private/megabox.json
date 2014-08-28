@@ -379,6 +379,10 @@
             "engagements": [
                 {
                     "type": "welcome",
+                    "name": "Welcome",
+                    "startAt": "2014-08-28T02:45:42.712Z",
+                    "endAt": "2015-08-28T02:45:42.712Z",
+                    "segment": "visitor",
                     "message": "Welcome to 10th floor of MegaBox!",
                     "triggerInstallations": [
                         "10th floor escalator"
@@ -386,6 +390,10 @@
                 },
                 {
                     "type": "recommendation",
+                    "name": "Recommend after meal",
+                    "startAt": "2014-08-28T02:45:42.712Z",
+                    "endAt": "2015-08-28T02:45:42.712Z",
+                    "segment": "visitor",
                     "message": {
                         "Pacific Coffee Company": "Enjoy a cold frappuccino at Pacific Coffee after your meal.",
                         "Noir Chocolatier": "Enjoy artisan chocolate at Noir after your meal."
@@ -405,6 +413,10 @@
                 },
                 {
                     "type": "recommendation",
+                    "name": "Recommend discount",
+                    "startAt": "2014-08-28T02:45:42.712Z",
+                    "endAt": "2015-08-28T02:45:42.712Z",
+                    "segment": "visitor",
                     "message": {
                         "Kenting Tea House": "Special $10 off at Kenting Tea House with your movie ticket",
                         "Thai Orchids": "Special $10 off at Thai Orchids with your movie ticket",
