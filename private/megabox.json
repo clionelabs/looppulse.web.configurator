@@ -385,7 +385,12 @@
                       "end": "2015-08-28T02:45:42.712Z"
                     },
                     "segment": "visitor",
-                    "message": "Welcome to 10th floor of MegaBox!",
+                    "context": {
+                      "10th floor escalator": {
+                        "alertMessage": "Welcome to 10th floor of MegaBox!",
+                        "inAppAssetURL": "http://megabox.com"
+                      }
+                    },
                     "triggerInstallations": [
                         "10th floor escalator"
                     ]
@@ -398,9 +403,15 @@
                       "end": "2015-08-28T02:45:42.712Z"
                     },
                     "segment": "visitor",
-                    "message": {
-                        "Pacific Coffee Company": "Enjoy a cold frappuccino at Pacific Coffee after your meal.",
-                        "Noir Chocolatier": "Enjoy artisan chocolate at Noir after your meal."
+                    "context": {
+                      "Pacific Coffee Company": {
+                        "alertMessage": "Enjoy a cold frappuccino at Pacific Coffee after your meal.",
+                        "inAppAssetURL": "http://www.pacificcoffee.com"
+                      },
+                      "Noir Chocolatier": {
+                        "alertMessage": "Enjoy artisan chocolate at Noir after your meal.",
+                        "inAppAssetURL": "http://www.openrice.com/english/restaurant/sr2.htm?shopid=105368&reviewlang=en%2Chk"
+                      }
                     },
                     "triggerInstallations": [
                         "Mega Ice",
@@ -423,13 +434,31 @@
                       "end": "2015-08-28T02:45:42.712Z"
                     },
                     "segment": "visitor",
-                    "message": {
-                        "Kenting Tea House": "Special $10 off at Kenting Tea House with your movie ticket",
-                        "Thai Orchids": "Special $10 off at Thai Orchids with your movie ticket",
-                        "California Pizza Kitchen": "Special $10 off at CPK with your movie ticket",
-                        "Studio City Bar & Café": "Special $10 off at Studio City with your movie ticket",
-                        "Noir Chocolatier": "Special $10 off at Noir Chocolatier with your movie ticket",
-                        "mr Laksa": "Special $10 off at Mr. Laksa with your movie ticket"
+                    "context": {
+                      "Kenting Tea House": {
+                        "alertMessage": "Special $10 off at Kenting Tea House with your movie ticket",
+                        "inAppAssetURL": "http://www.openrice.com/english/restaurant/sr2.htm?shopid=47357"
+                      },
+                      "Thai Orchids": {
+                        "alertMessage": "Special $10 off at Thai Orchids with your movie ticket",
+                        "inAppAssetURL": "http://www.thaiorchids.com.hk"
+                      },
+                      "California Pizza Kitchen": {
+                        "alertMessage": "Special $10 off at CPK with your movie ticket",
+                        "inAppAssetURL": "http://www.cpk.com"
+                      },
+                      "Studio City Bar & Café": {
+                        "alertMessage": "Special $10 off at Studio City with your movie ticket",
+                        "inAppAssetURL": "http://www.studiocitycafe.com.hk"
+                      },
+                      "Noir Chocolatier": {
+                        "alertMessage": "Special $10 off at Noir Chocolatier with your movie ticket",
+                        "inAppAssetURL": "http://www.hk-noir.com/COVER.html"
+                      },
+                      "mr Laksa": {
+                        "alertMessage": "Special $10 off at Mr. Laksa with your movie ticket",
+                        "inAppAssetURL": "http://www.openrice.com/restaurant/sr2.htm?shopid=166243"
+                      }
                     },
                     "triggerInstallations": [
                         "UA Cinemas"
