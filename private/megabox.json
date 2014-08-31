@@ -7,7 +7,7 @@
         "restKey": "hnz5gkWZ45cJkXf8yp2huHc89NG55O1ajjHSrwxh"
       },
       "firebase": {
-        "root": "https://looppulse-megabox.looppulse.com"
+        "root": "https://looppulse-megabox.firebaseio.com"
       }
     },
     "applications": [
