@@ -4,7 +4,8 @@
       "onlySendBeaconEventsWithKnownProximity": false,
       "parse": {
         "applicationId": "dP9yJQI58giCirVVIYeVd1YobFbIujv5wDFWA8WX",
-        "restKey": "hnz5gkWZ45cJkXf8yp2huHc89NG55O1ajjHSrwxh"
+        "clientKey": "hnz5gkWZ45cJkXf8yp2huHc89NG55O1ajjHSrwxh",
+        "restKey": "sJdK89EInfZPj0I5f6yP2MVExIAxTDZbEfw7twVL"
       },
       "firebase": {
         "root": "https://looppulse-megabox.firebaseio.com"
