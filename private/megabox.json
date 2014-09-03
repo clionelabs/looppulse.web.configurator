@@ -54,11 +54,11 @@
     "products": {
         "Mega Ice": {
             "name": "Mega Ice",
-            "type": "entrance"
+            "category": "Sports"
         },
         "Coco Curry House": {
             "name": "Coco Curry House",
-            "type": "cashier"
+            "category": "Food"
         },
         "Tokachi Dolphin Well": {
             "name": "Tokachi Dolphin Well",
