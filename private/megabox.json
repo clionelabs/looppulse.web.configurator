@@ -416,6 +416,7 @@
                         "inAppAssetURL": "http://megabox.com"
                       }
                     },
+                    "triggerWhen": "entering",
                     "triggerInstallations": [
                         "10th floor escalator"
                     ],
@@ -437,6 +438,7 @@
                         "inAppAssetURL": "http://www.pacificcoffee.com"
                       }
                     },
+                    "triggerWhen": "entering",
                     "triggerInstallations": [
                         "Mega Ice"
                     ],
@@ -467,6 +469,7 @@
                         "inAppAssetURL": "http://www.megaice.com.hk"
                       }
                     },
+                    "triggerWhen": "leaving",
                     "triggerInstallations": [
                         "Kenting Tea House",
                         "Thai Orchids",
@@ -498,6 +501,7 @@
                         "inAppAssetURL": "http://www.openrice.com/english/restaurant/sr2.htm?shopid=105368&reviewlang=en%2Chk"
                       }
                     },
+                    "triggerWhen": "leaving",
                     "triggerInstallations": [
                         "Coco Curry House",
                         "Tokachi Dolphin Well",
@@ -540,6 +544,7 @@
                         "inAppAssetURL": "http://www.openrice.com/restaurant/sr2.htm?shopid=166243"
                       }
                     },
+                    "triggerWhen": "leaving",
                     "triggerInstallations": [
                         "UA Cinemas"
                     ],
