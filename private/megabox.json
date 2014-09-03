@@ -148,6 +148,20 @@
                         "z": 10
                     }
                 },
+                "Mega Ice Snack Bar": {
+                    "product": "Mega Ice",
+                    "beacon": {
+                        "proximityUUID": "A2DCA1E4-0607-4F37-9FF1-825237B278FE",
+                        "major": 1,
+                        "minor": 2,
+                        "power": -12
+                    },
+                    "coordinate": {
+                        "x": 5,
+                        "y": 9,
+                        "z": 10
+                    }
+                },
                 "Coco Curry House": {
                     "product": "Coco Curry House",
                     "beacon": {
@@ -404,8 +418,68 @@
                     },
                     "triggerInstallations": [
                         "10th floor escalator"
+                    ],
+                    "recommendInstallations": [
+                      "10th floor escalator"
                     ]
                 },
+                {
+                    "type": "recommendation",
+                    "name": "Meal coupon at Mega Ice",
+                    "validPeriod": {
+                      "start": "2014-08-28T02:45:42.712Z",
+                      "end": "2015-08-28T02:45:42.712Z"
+                    },
+                    "segment": "visitor",
+                    "context": {
+                      "Mega Ice Snack Bar": {
+                        "alertMessage": "Enjoy a $10 discount at the snack bar.",
+                        "inAppAssetURL": "http://www.pacificcoffee.com"
+                      }
+                    },
+                    "triggerInstallations": [
+                        "Mega Ice"
+                    ],
+                    "recommendInstallations": [
+                        "Mega Ice Snack Bar"
+                    ],
+                    "stopInstallations": [
+                        "Kenting Tea House",
+                        "Thai Orchids",
+                        "California Pizza Kitchen",
+                        "Studio City Bar & Café",
+                        "Noir Chocolatier",
+                        "mr Laksa"
+                    ]
+                },
+
+                {
+                    "type": "recommendation",
+                    "name": "Skate after meal",
+                    "validPeriod": {
+                      "start": "2014-08-28T02:45:42.712Z",
+                      "end": "2015-08-28T02:45:42.712Z"
+                    },
+                    "segment": "visitor",
+                    "context": {
+                      "Mega Ice": {
+                        "alertMessage": "Come skate!",
+                        "inAppAssetURL": "http://www.megaice.com.hk"
+                      }
+                    },
+                    "triggerInstallations": [
+                        "Kenting Tea House",
+                        "Thai Orchids",
+                        "California Pizza Kitchen",
+                        "Studio City Bar & Café",
+                        "Noir Chocolatier",
+                        "mr Laksa"
+                    ],
+                    "recommendInstallations": [
+                        "Mega Ice"
+                    ]
+                },
+
                 {
                     "type": "recommendation",
                     "name": "Recommend after meal",
@@ -425,7 +499,6 @@
                       }
                     },
                     "triggerInstallations": [
-                        "Mega Ice",
                         "Coco Curry House",
                         "Tokachi Dolphin Well",
                         "Nippon Sushi Dining",
@@ -454,10 +527,6 @@
                         "alertMessage": "Special $10 off at Thai Orchids with your movie ticket",
                         "inAppAssetURL": "http://www.thaiorchids.com.hk"
                       },
-                      "California Pizza Kitchen": {
-                        "alertMessage": "Special $10 off at CPK with your movie ticket",
-                        "inAppAssetURL": "http://www.cpk.com"
-                      },
                       "Studio City Bar & Café": {
                         "alertMessage": "Special $10 off at Studio City with your movie ticket",
                         "inAppAssetURL": "http://www.studiocitycafe.com.hk"
@@ -477,7 +546,6 @@
                     "recommendInstallations": [
                         "Kenting Tea House",
                         "Thai Orchids",
-                        "California Pizza Kitchen",
                         "Studio City Bar & Café",
                         "Noir Chocolatier",
                         "mr Laksa"
