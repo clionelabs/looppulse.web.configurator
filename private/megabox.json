@@ -435,7 +435,7 @@
                     "context": {
                       "Mega Ice Snack Bar": {
                         "alertMessage": "Enjoy a $10 discount at the snack bar.",
-                        "inAppAssetURL": "http://www.pacificcoffee.com"
+                        "inAppAssetURL": "https://s3-ap-southeast-1.amazonaws.com/manage-dev/megaice10.jpg"
                       }
                     },
                     "triggerWhen": "entering",
@@ -466,7 +466,7 @@
                     "context": {
                       "Mega Ice": {
                         "alertMessage": "Come skate!",
-                        "inAppAssetURL": "http://www.megaice.com.hk"
+                        "inAppAssetURL": "https://s3-ap-southeast-1.amazonaws.com/manage-dev/megaice.jpg"
                       }
                     },
                     "triggerWhen": "leaving",
