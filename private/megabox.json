@@ -125,6 +125,37 @@
             "category": "General"
         }
     },
+    "segments": {
+      "Visitors": {
+        "name": "Visitors"
+      },
+      "Weekend Foodies": {
+        "name": "Weekend Foodies",
+        "criteria": {
+          "hasBeen": true,
+          "to": "any",
+          "locations": [{
+            "category": "Food"
+          }, {
+            "product": "Mega Ice"
+          }, {
+            "floor": 10
+          }],
+          "times": {
+            "atLeast": 5,
+            "atMost": 10
+          },
+          "minutes": {
+            "atLeast": 5,
+            "atMost": 10
+          },
+          "days": {
+            "inLast": 60
+          },
+          "every": "weekends"
+        }
+      }
+    },
     "locations": {
         "Megabox": {
             "name": "Megabox",
@@ -409,7 +440,7 @@
                       "start": "2014-08-28T02:45:42.712Z",
                       "end": "2015-08-28T02:45:42.712Z"
                     },
-                    "segment": "visitor",
+                    "segment": "Visitors",
                     "context": {
                       "10th floor escalator": {
                         "alertMessage": "Welcome to 10th floor of MegaBox!",
@@ -431,7 +462,7 @@
                       "start": "2014-08-28T02:45:42.712Z",
                       "end": "2015-08-28T02:45:42.712Z"
                     },
-                    "segment": "visitor",
+                    "segment": "Visitors",
                     "context": {
                       "Mega Ice Snack Bar": {
                         "alertMessage": "Enjoy a $10 discount at the snack bar.",
@@ -462,7 +493,7 @@
                       "start": "2014-08-28T02:45:42.712Z",
                       "end": "2015-08-28T02:45:42.712Z"
                     },
-                    "segment": "visitor",
+                    "segment": "Visitors",
                     "context": {
                       "Mega Ice": {
                         "alertMessage": "Come skate!",
@@ -490,7 +521,7 @@
                       "start": "2014-08-28T02:45:42.712Z",
                       "end": "2015-08-28T02:45:42.712Z"
                     },
-                    "segment": "visitor",
+                    "segment": "Weekend Foodies",
                     "context": {
                       "Pacific Coffee Company": {
                         "alertMessage": "Enjoy a cold frappuccino at Pacific Coffee after your meal.",
@@ -521,7 +552,7 @@
                       "start": "2014-08-28T02:45:42.712Z",
                       "end": "2015-08-28T02:45:42.712Z"
                     },
-                    "segment": "visitor",
+                    "segment": "Visitors",
                     "context": {
                       "Kenting Tea House": {
                         "alertMessage": "Special $10 off at Kenting Tea House with your movie ticket",
