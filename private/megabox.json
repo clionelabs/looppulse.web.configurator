@@ -56,6 +56,10 @@
             "name": "Mega Ice",
             "category": "Entertainment"
         },
+        "Mega Ice Snack Bar": {
+            "name": "Mega Ice Snack Bar",
+            "category": "Food"
+        },
         "Coco Curry House": {
             "name": "Coco Curry House",
             "category": "Food"
@@ -180,7 +184,7 @@
                     }
                 },
                 "Mega Ice Snack Bar": {
-                    "product": "Mega Ice",
+                    "product": "Mega Ice Snack Bar",
                     "beacon": {
                         "proximityUUID": "A2DCA1E4-0607-4F37-9FF1-825237B278FE",
                         "major": 1,
