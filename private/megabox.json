@@ -134,7 +134,7 @@
         "criteria": {
           "hasBeen": true,
           "to": "any",
-          "locations": [{
+          "triggerLocations": [{
             "category": "Food"
           }, {
             "product": "Mega Ice"
@@ -145,7 +145,7 @@
             "atLeast": 5,
             "atMost": 10
           },
-          "minutes": {
+          "durationInMinutes": {
             "atLeast": 5,
             "atMost": 10
           },
