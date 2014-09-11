@@ -197,7 +197,7 @@
           "days": {
             "inLast": 60
           },
-          "every": "days"
+          "every": "day"
         }
       }
     },
