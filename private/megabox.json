@@ -154,6 +154,51 @@
           },
           "every": "weekends"
         }
+      },
+      "Weekdays Foodies": {
+        "name": "Weekdays Foodies",
+        "criteria": {
+          "hasBeen": true,
+          "to": "all",
+          "triggerLocations": [{
+            "categoryName": "Food"
+          }, {
+            "productName": "Mega Ice"
+          }, {
+            "floorLevel": 10
+          }],
+          "times": {
+            "atLeast": 5,
+            "atMost": 10
+          },
+          "durationInMinutes": {
+            "atLeast": 5,
+            "atMost": 10
+          },
+          "days": {
+            "start": "2014-08-28T02:45:42.712Z",
+            "end": "2015-08-28T02:45:42.712Z"
+          },
+          "every": "weekdays"
+        }
+      },
+      "NonFoodies": {
+        "name": "Non-Foodies",
+        "criteria": {
+          "hasBeen": false,
+          "to": "any",
+          "triggerLocations": [{
+            "categoryName": "Food"
+          }, {
+            "productName": "Mega Ice"
+          }, {
+            "floorLevel": 10
+          }],
+          "days": {
+            "inLast": 60
+          },
+          "every": "days"
+        }
       }
     },
     "locations": {
