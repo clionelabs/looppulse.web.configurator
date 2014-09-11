@@ -135,11 +135,11 @@
           "hasBeen": true,
           "to": "any",
           "triggerLocations": [{
-            "category": "Food"
+            "categoryName": "Food"
           }, {
-            "product": "Mega Ice"
+            "productName": "Mega Ice"
           }, {
-            "floor": 10
+            "floorLevel": 10
           }],
           "times": {
             "atLeast": 5,
