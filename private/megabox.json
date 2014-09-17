@@ -64,11 +64,13 @@
     "products": {
         "Mega Ice": {
             "name": "Mega Ice",
-            "category": "Entertainment"
+            "category": "Entertainment",
+            "type": "entrance"
         },
         "Mega Ice Snack Bar": {
             "name": "Mega Ice Snack Bar",
-            "category": "Food"
+            "category": "Food",
+            "type": "cashier"
         },
         "Coco Curry House": {
             "name": "Coco Curry House",
