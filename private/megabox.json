@@ -150,6 +150,7 @@
         "criteria": {
           "hasBeen": true,
           "to": "any",
+          "locations": ["Megabox"],
           "triggerLocations": [{
             "categoryName": "Food / Dining"
           }, {
