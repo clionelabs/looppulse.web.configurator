@@ -12,12 +12,19 @@ configureCompanies = ->
   firebasePath = "#{firebaseConfig.root}/companies"
   console.log("firebase path:", firebasePath)
   firebase = new Firebase(firebasePath)
-  if firebaseConfig.forceReset?
-    firebase.remove()
+  firebase.auth firebaseConfig.rootSecret, Meteor.bindEnvironment (error, result) ->
+    if error
+      console.error('Login Failed!', error)
+    else
+      console.info('Authenticated successfully with payload:', result.auth)
+      console.info('Auth expires at:', new Date(result.expires * 1000))
 
-  for companyFile in Meteor.settings.companyFiles
-    console.log("Writing...", firebaseConfig, companyFile)
-    file = Assets.getText(companyFile)
-    company = JSON.parse(file)
+      if firebaseConfig.forceReset?
+        firebase.remove()
 
-    firebase.push(company)
+      for companyFile in Meteor.settings.companyFiles
+        console.log("Writing...", firebaseConfig, companyFile)
+        file = Assets.getText(companyFile)
+        company = JSON.parse(file)
+
+        firebase.push(company)

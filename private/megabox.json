@@ -8,7 +8,8 @@
         "restKey": "sJdK89EInfZPj0I5f6yP2MVExIAxTDZbEfw7twVL"
       },
       "firebase": {
-        "root": "https://looppulse-megabox.firebaseio.com"
+        "root": "https://megabox-db.firebaseio.com/",
+        "rootSecret": "80JcmD1eR6Ru2IOKLdgorbbfwLQgw8kZd5KQmd6H"
       }
     },
     "applications": [
