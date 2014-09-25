@@ -1,7 +1,7 @@
 {
   "firebase": {
     "root": "https://looppulse-config.firebaseio.com/",
-    "rootSecret": "xcZrkQNUsYIs09PncAI8u69a8ZPiP7yGkaqoZR6b",
+    "rootSecret": "<SEE looppulse.web.manage README: Firebase Security>",
     "forceReset": false
   },
 
