@@ -1,0 +1,594 @@
+{
+    "name": "Beta Mall",
+    "system": {
+      "onlySendBeaconEventsWithKnownProximity": true,
+      "parse": {
+        "applicationId": "dP9yJQI58giCirVVIYeVd1YobFbIujv5wDFWA8WX",
+        "clientKey": "hnz5gkWZ45cJkXf8yp2huHc89NG55O1ajjHSrwxh",
+        "restKey": "sJdK89EInfZPj0I5f6yP2MVExIAxTDZbEfw7twVL"
+      },
+      "firebase": {
+        "root": "https://looppulse-beta.firebaseio.com/",
+        "rootSecret": "ha5jJXD3ac6DzOWoNfxPunOvrfvK68gQXwodfnn9"
+      }
+    },
+    "applications": [
+      {
+        "name": "Simulator",
+        "token": "3kjo98KJK90dfslklerj",
+        "applicationId": "34iuolkJKKLJ32f8k"
+      },
+      {
+        "name": "Mobile SDK Testing",
+        "token": "34LKJ043nkjajoifuer9",
+        "applicationId": "5of345ljkfaLKJKJL"
+      }
+    ],
+    "categories": {
+      "Asian Delights": {
+        "name": "Asian Delights"
+      },
+      "Sports": {
+        "name": "Sports"
+      },
+      "Deil & Confectioneries": {
+        "name": "Deil & Confectioneries"
+      },
+      "Department Store": {
+        "name": "Department Store"
+      },
+      "Entertainment": {
+        "name": "Entertainment"
+      },
+      "Fashion": {
+        "name": "Fashion / Accessories"
+      },
+      "Lifestyle": {
+        "name": "Lifestyle / Gift / Book / Audio"
+      },
+      "Food": {
+        "name": "Food / Dining"
+      },
+      "Personal Care": {
+        "name": "Personal Care / Beauty"
+      },
+      "Children": {
+        "name": "Children / Kids"
+      },
+      "Entrance": {
+        "name": "Entrance"
+      },
+      "General": {
+        "name": "General"
+      }
+    },
+    "products": {
+        "East Entrance": {
+          "name": "East Entrance",
+          "category": "Entrance"
+        },
+        "West Entrance": {
+          "name": "West Entrance",
+          "category": "Entrance"
+        },
+        "Buy n Large": {
+          "name": "Buy n Large",
+          "category": "Department Store"
+        },
+        "Apita": {
+          "name": "Apita",
+          "category": "Department Store"
+        },
+        "Coco Curry House": {
+            "name": "Coco Curry House",
+            "category": "Food"
+        },
+        "Tokachi Dolphin Well": {
+            "name": "Tokachi Dolphin Well",
+            "category": "Food"
+        },
+        "Nippon Sushi Dining": {
+            "name": "Nippon Sushi Dining",
+            "category": "Food"
+        },
+        "Pepper Lunch": {
+            "name": "Pepper Lunch",
+            "category": "Food"
+        },
+        "Café Fifty Fifty": {
+            "name": "Café Fifty Fifty",
+            "category": "Food"
+        },
+        "Pacific Coffee Company": {
+            "name": "Pacific Coffee Company",
+            "category": "Food"
+        },
+        "Uniqlo": {
+          "name": "Uniqlo",
+          "category": "Fashion"
+        },
+        "Giordano": {
+          "name": "Giordano",
+          "category": "Fashion"
+        },
+        "Tai Hing": {
+            "name": "Tai Hing",
+            "category": "Asian Delights"
+        },
+        "Toysrus": {
+          "name": "Toysrus",
+          "category": "Children"
+        },
+        "Watson": {
+          "name": "Watson",
+          "category": "Personal Care"
+        },
+        "Mannings": {
+          "name": "Mannings",
+          "category": "Personal Care"
+        },
+        "UA Cinemas": {
+            "name": "UA Cinemas",
+            "category": "Entertainment"
+        },
+        "AA Mini Store": {
+            "name": "AA Mini Store",
+            "category": "General"
+        },
+        "Thai Orchids": {
+            "name": "Thai Orchids",
+            "category": "Food"
+        },
+        "California Pizza Kitchen": {
+            "name": "California Pizza Kitchen",
+            "category": "Food"
+        },
+        "Studio City Bar & Café": {
+            "name": "Studio City Bar & Café",
+            "category": "Food"
+        },
+        "Noir Chocolatier": {
+            "name": "Noir Chocolatier",
+            "category": "Food"
+        },
+        "mr Laksa": {
+            "name": "mr.Laksa",
+            "category": "Food"
+        },
+        "10th floor escalator": {
+            "name": "10th floor escalator",
+            "category": "General"
+        },
+        "general push notification": {
+            "name": "general push notification",
+            "category": "General"
+        }
+    },
+    "segments": {
+      "Visitors": {
+        "name": "Every visitor"
+      },
+      "Weekdays Foodies": {
+        "name": "Weekend Foodies in last 60 days",
+        "criteria": {
+          "hasBeen": true,
+          "to": "any",
+          "locations": ["Beta Mall"],
+          "triggerLocations": [{
+            "categoryName": "Food / Dining"
+          }, {
+            "categoryName": "Deil & Confectioneries"
+          }, {
+            "categoryName": "Asian Delights"
+          }],
+          "times": {
+            "atLeast": 1
+          },
+          "durationInMinutes": {
+            "atLeast": 1
+          },
+          "days": {
+            "inLast": 60
+          },
+          "every": "weekdays"
+        }
+      },
+      "Non Shoppers": {
+        "name": "Non Shoppers in last 30 days",
+        "criteria": {
+          "hasBeen": false,
+          "to": "any",
+          "triggerLocations": [{
+            "categoryName": "Sports"
+          }, {
+            "categoryName": "Department Store"
+          }, {
+            "categoryName": "Lifestyle / Gift / Book / Audio"
+          }, {
+            "categoryName": "Personal Care / Beauty"
+          }],
+          "days": {
+            "inLast": 30
+          },
+          "every": "day"
+        }
+      },
+      "Movie Goers": {
+          "name": "Movie Goers in last 30 days",
+          "criteria": {
+            "hasBeen": false,
+            "to": "any",
+            "triggerLocations": [{
+              "productName": "UA Cinemas"
+            }],
+            "days": {
+              "inLast": 30
+            },
+            "every": "day"
+          }
+      }
+    },
+    "locations": {
+        "Beta Mall": {
+            "name": "Beta Mall",
+            "location": "Kowloon Bay",
+            "coordinate": {
+                "latitude": 789,
+                "longitude": 123
+            },
+            "installations": {
+                "East Entrance": {
+                    "product": "East Entrance",
+                    "beacon": {
+                        "proximityUUID": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+                        "major": 1901,
+                        "minor": 12101,
+                        "power": -12
+                    },
+                    "coordinate": {
+                        "x": 12,
+                        "y": 10,
+                        "z": 0
+                    }
+                },
+                "West Entrance": {
+                    "product": "West Entrance",
+                    "beacon": {
+                        "proximityUUID": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+                        "major": 1901,
+                        "minor": 100,
+                        "power": -12
+                    },
+                    "coordinate": {
+                        "x": 1,
+                        "y": 10,
+                        "z": 0
+                    }
+                },
+                "Buy n Large": {
+                    "product": "Buy n Large",
+                    "beacon": {
+                        "proximityUUID": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+                        "major": 1901,
+                        "minor": 101,
+                        "power": -12
+                    },
+                    "coordinate": {
+                        "x": 1,
+                        "y": 10,
+                        "z": 3
+                    }
+                },
+                "Apita": {
+                    "product": "Apita",
+                    "beacon": {
+                        "proximityUUID": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+                        "major": 1901,
+                        "minor": 102,
+                        "power": -12
+                    },
+                    "coordinate": {
+                        "x": 1,
+                        "y": 10,
+                        "z": 4
+                    }
+                },
+
+                "Coco Curry House": {
+                    "product": "Coco Curry House",
+                    "beacon": {
+                        "proximityUUID": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+                        "major": 1901,
+                        "minor": 12101,
+                        "power": -12
+                    },
+                    "coordinate": {
+                        "x": 12,
+                        "y": 10,
+                        "z": 10
+                    }
+                },
+                "Tokachi Dolphin Well": {
+                    "product": "Tokachi Dolphin Well",
+                    "beacon": {
+                        "proximityUUID": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+                        "major": 618,
+                        "minor": 1002,
+                        "power": -12
+                    },
+                    "coordinate": {
+                        "x": 12,
+                        "y": 8,
+                        "z": 10
+                    }
+                },
+                "Nippon Sushi Dining": {
+                    "product": "Nippon Sushi Dining",
+                    "beacon": {
+                        "proximityUUID": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+                        "major": 1023,
+                        "minor": 19101,
+                        "power": -12
+                    },
+                    "coordinate": {
+                        "x": 12,
+                        "y": 6,
+                        "z": 10
+                    }
+                },
+                "Pepper Lunch": {
+                    "product": "Pepper Lunch",
+                    "beacon": {
+                        "proximityUUID": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+                        "major": 801,
+                        "minor": 14001,
+                        "power": -12
+                    },
+                    "coordinate": {
+                        "x": 12,
+                        "y": 9,
+                        "z": 10
+                    }
+                },
+                "Café Fifty Fifty": {
+                    "product": "Café Fifty Fifty",
+                    "beacon": {
+                        "proximityUUID": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+                        "major": 801,
+                        "minor": 14101,
+                        "power": -12
+                    },
+                    "coordinate": {
+                        "x": 4,
+                        "y": 6,
+                        "z": 10
+                    }
+                },
+                "Pacific Coffee Company": {
+                    "product": "Pacific Coffee Company",
+                    "beacon": {
+                        "proximityUUID": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+                        "major": 1213,
+                        "minor": 14001,
+                        "power": -12
+                    },
+                    "coordinate": {
+                        "x": 10,
+                        "y": 2,
+                        "z": 10
+                    }
+                },
+                "Uniqlo": {
+                    "product": "Uniqlo",
+                    "beacon": {
+                        "proximityUUID": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+                        "major": 1213,
+                        "minor": 140,
+                        "power": -12
+                    },
+                    "coordinate": {
+                        "x": 12,
+                        "y": 2,
+                        "z": 5
+                    }
+                },
+                "Giordano": {
+                    "product": "Giordano",
+                    "beacon": {
+                        "proximityUUID": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+                        "major": 1213,
+                        "minor": 150,
+                        "power": -12
+                    },
+                    "coordinate": {
+                        "x": 12,
+                        "y": 10,
+                        "z": 5
+                    }
+                },
+                "Tai Hing": {
+                    "product": "Tai Hing",
+                    "beacon": {
+                        "proximityUUID": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+                        "major": 1213,
+                        "minor": 14101,
+                        "power": -12
+                    },
+                    "coordinate": {
+                        "x": 12,
+                        "y": 2,
+                        "z": 10
+                    }
+                },
+                "Toysrus": {
+                    "product": "Toysrus",
+                    "beacon": {
+                        "proximityUUID": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+                        "major": 1213,
+                        "minor": 160,
+                        "power": -12
+                    },
+                    "coordinate": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 8
+                    }
+                },
+                "Watson": {
+                    "product": "Watson",
+                    "beacon": {
+                        "proximityUUID": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+                        "major": 1213,
+                        "minor": 170,
+                        "power": -12
+                    },
+                    "coordinate": {
+                        "x": 1,
+                        "y": 12,
+                        "z": 4
+                    }
+                },
+                "Mannings": {
+                    "product": "Mannings",
+                    "beacon": {
+                        "proximityUUID": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+                        "major": 1213,
+                        "minor": 180,
+                        "power": -12
+                    },
+                    "coordinate": {
+                        "x": 3,
+                        "y": 10,
+                        "z": 4
+                    }
+                },
+                "UA Cinemas": {
+                    "product": "UA Cinemas",
+                    "beacon": {
+                        "proximityUUID": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+                        "major": 1908,
+                        "minor": 3003,
+                        "power": -12
+                    },
+                    "coordinate": {
+                        "x": 2,
+                        "y": 6,
+                        "z": 11
+                    }
+                },
+                "AA Mini Store": {
+                    "product": "AA Mini Store",
+                    "beacon": {
+                        "proximityUUID": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+                        "major": 214,
+                        "minor": 2004,
+                        "power": -12
+                    },
+                    "coordinate": {
+                        "x": 6,
+                        "y": 4,
+                        "z": 11
+                    }
+                },
+                "Thai Orchids": {
+                    "product": "Thai Orchids",
+                    "beacon": {
+                        "proximityUUID": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+                        "major": 1605,
+                        "minor": 19101,
+                        "power": -12
+                    },
+                    "coordinate": {
+                        "x": 12,
+                        "y": 6,
+                        "z": 11
+                    }
+                },
+                "California Pizza Kitchen": {
+                    "product": "California Pizza Kitchen",
+                    "beacon": {
+                        "proximityUUID": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+                        "major": 214,
+                        "minor": 2104,
+                        "power": -12
+                    },
+                    "coordinate": {
+                        "x": 12,
+                        "y": 4,
+                        "z": 11
+                    }
+                },
+                "Studio City Bar & Café": {
+                    "product": "Studio City Bar & Café",
+                    "beacon": {
+                        "proximityUUID": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+                        "major": 315,
+                        "minor": 22101,
+                        "power": -12
+                    },
+                    "coordinate": {
+                        "x": 6,
+                        "y": 2,
+                        "z": 11
+                    }
+                },
+                "Noir Chocolatier": {
+                    "product": "Noir Chocolatier",
+                    "beacon": {
+                        "proximityUUID": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+                        "major": 1908,
+                        "minor": 3001,
+                        "power": -12
+                    },
+                    "coordinate": {
+                        "x": 8,
+                        "y": 4,
+                        "z": 11
+                    }
+                },
+                "mr Laksa": {
+                    "product": "mr Laksa",
+                    "beacon": {
+                        "proximityUUID": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+                        "major": 315,
+                        "minor": 22102,
+                        "power": -12
+                    },
+                    "coordinate": {
+                        "x": 14,
+                        "y": 2,
+                        "z": 11
+                    }
+                },
+                "10th floor escalator": {
+                    "product": "10th floor escalator",
+                    "beacon": {
+                        "proximityUUID": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+                        "major": 916,
+                        "minor": 3001,
+                        "power": -12
+                    },
+                    "coordinate": {
+                        "x": 6,
+                        "y": 6,
+                        "z": 10
+                    }
+                },
+                "general push notification": {
+                    "product": "general push notification",
+                    "beacon": {
+                        "proximityUUID": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+                        "major": 916,
+                        "minor": 3101,
+                        "power": -12
+                    },
+                    "coordinate": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    }
+                }
+            }
+        }
+    }
+}

@@ -5,5 +5,5 @@
     "forceReset": false
   },
 
-  "companyFiles": ["megabox.json"]
+  "companyFiles": ["megabox.json", "beta.json"]
 }
