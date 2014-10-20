@@ -185,7 +185,7 @@
             "atLeast": 1
           },
           "durationInMinutes": {
-            "atLeast": 1
+            "atLeast": 15
           },
           "days": {
             "inLast": 60
@@ -221,6 +221,12 @@
             "triggerLocations": [{
               "productName": "UA Cinemas"
             }],
+            "times": {
+              "atLeast": 1
+            },
+            "durationInMinutes": {
+              "atLeast": 15
+            },
             "days": {
               "inLast": 30
             },
