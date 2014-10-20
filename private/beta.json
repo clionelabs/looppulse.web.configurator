@@ -216,7 +216,7 @@
       "Movie Goers": {
           "name": "Movie Goers in last 30 days",
           "criteria": {
-            "hasBeen": false,
+            "hasBeen": true,
             "to": "any",
             "triggerLocations": [{
               "productName": "UA Cinemas"
