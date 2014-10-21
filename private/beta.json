@@ -193,26 +193,6 @@
           "every": "weekdays"
         }
       },
-      "Non Shoppers": {
-        "name": "Non Shoppers in last 30 days",
-        "criteria": {
-          "hasBeen": false,
-          "to": "any",
-          "triggerLocations": [{
-            "categoryName": "Sports"
-          }, {
-            "categoryName": "Department Store"
-          }, {
-            "categoryName": "Lifestyle / Gift / Book / Audio"
-          }, {
-            "categoryName": "Personal Care / Beauty"
-          }],
-          "days": {
-            "inLast": 30
-          },
-          "every": "day"
-        }
-      },
       "Movie Goers": {
           "name": "Movie Goers in last 30 days",
           "criteria": {
