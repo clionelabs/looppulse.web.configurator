@@ -169,7 +169,7 @@
         "name": "Every visitor"
       },
       "Weekdays Foodies": {
-        "name": "Weekend Foodies in last 60 days",
+        "name": "Weekdays Foodies in last 60 days",
         "criteria": {
           "hasBeen": true,
           "to": "any",
