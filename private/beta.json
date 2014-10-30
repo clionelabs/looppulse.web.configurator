@@ -220,7 +220,8 @@
             "location": "Kowloon Bay",
             "coordinate": {
                 "latitude": 789,
-                "longitude": 123
+                "longitude": 123,
+                "radius": 10
             },
             "installations": {
                 "East Entrance": {

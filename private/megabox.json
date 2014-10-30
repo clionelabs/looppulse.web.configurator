@@ -225,7 +225,8 @@
             "location": "Kowloon Bay",
             "coordinate": {
                 "latitude": 123,
-                "longitude": 456
+                "longitude": 456,
+                "radius": 10
             },
             "installations": {
                 "Mega Ice": {
