@@ -219,25 +219,14 @@
         }
       }
     },
-    "geofences": {
-        "1": {
-            "latitude": 22.286763,
-            "longitude": 114.190319,
-            "radius": 50.0
-        },
-        "2": {
-            "latitude": 20,
-            "longitude": 30,
-            "radius": 5
-        }
-    },
     "locations": {
         "Megabox": {
             "name": "Megabox",
             "location": "Kowloon Bay",
             "coordinate": {
                 "latitude": 123,
-                "longitude": 456
+                "longitude": 456,
+                "radius": 5
             },
             "installations": {
                 "Mega Ice": {
