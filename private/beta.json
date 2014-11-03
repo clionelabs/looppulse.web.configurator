@@ -215,22 +215,13 @@
       }
     },
     "locations": {
-        "Beta Mall 2": {
-            "name": "Beta Mall 2",
+       "Beta Mall": {
+            "name": "Beta Mall",
             "location": "Kowloon Bay",
             "coordinate": {
                 "latitude": 22.286763,
                 "longitude": 114.190319,
                 "radius": 50.0
-            }
-        },
-        "Beta Mall": {
-            "name": "Beta Mall",
-            "location": "Kowloon Bay",
-            "coordinate": {
-                "latitude": 789,
-                "longitude": 123,
-                "radius": 10
             },
             "installations": {
                 "East Entrance": {
