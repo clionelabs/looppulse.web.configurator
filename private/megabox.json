@@ -8,8 +8,8 @@
         "restKey": "sJdK89EInfZPj0I5f6yP2MVExIAxTDZbEfw7twVL"
       },
       "firebase": {
-        "root": "https://hiukim-lp-dev-beacon.firebaseio.com/",
-        "rootSecret": "a8heWtUdnNAGliQwJ25cX7UWGy5cYwWf4EYegtQB"
+        "root": "https://looppulse-beta.firebaseio.com/",
+        "rootSecret": "ha5jJXD3ac6DzOWoNfxPunOvrfvK68gQXwodfnn9"
       }
     },
     "applications": [
