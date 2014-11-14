@@ -14,9 +14,6 @@
     },
     "applications": [
       {
-        "name": "Megabox Mall App"
-      },
-      {
         "name": "Simulator",
         "token": "zuBkAxLzOWA1h1HSXGSV",
         "applicationId": "vNTFpDg2gawA2CZAD"
@@ -227,6 +224,10 @@
                 "latitude": 123,
                 "longitude": 456,
                 "radius": 5
+            },
+            operatingTime: {
+              openingHour : 6,
+              closingHour : 2
             },
             "installations": {
                 "Mega Ice": {

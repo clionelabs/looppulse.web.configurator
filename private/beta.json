@@ -223,6 +223,10 @@
                 "longitude": 114.190319,
                 "radius": 50.0
             },
+            "operatingTime": {
+              "openingHour" : 6,
+              "closingHour" : 2
+            },
             "installations": {
                 "East Entrance": {
                     "product": "East Entrance",
