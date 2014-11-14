@@ -8,7 +8,7 @@
         "restKey": "sJdK89EInfZPj0I5f6yP2MVExIAxTDZbEfw7twVL"
       },
       "firebase": {
-        "root": "https://megabox-db.firebaseio.com/",
+         "root": "https://megabox-db.firebaseio.com/",
         "rootSecret": "80JcmD1eR6Ru2IOKLdgorbbfwLQgw8kZd5KQmd6H"
       }
     },
@@ -225,7 +225,8 @@
             "location": "Kowloon Bay",
             "coordinate": {
                 "latitude": 123,
-                "longitude": 456
+                "longitude": 456,
+                "radius": 5
             },
             "installations": {
                 "Mega Ice": {
